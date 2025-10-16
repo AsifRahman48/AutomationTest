@@ -1,0 +1,13 @@
+BASE_URL = https://automationexercise.com/
+USER_NAME = asif484
+USER_EMAIL = asif484@yopmail.com
+USER_PASSWORD = 123456
+FIRSTNAME = Asif
+LASTNAME = Rahman
+COMPANY = Brain Station 23
+ADDRESS = Financial Center 8 Stone Street
+ADDRESS2 = Financial Center 8 Stone Street
+STATE = New York
+CITY = New York City
+ZIPCODE = 10006
+MOBILE_NUMBER = 01785209073

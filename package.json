@@ -4,7 +4,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "test:e2e": "npx playwright test"
+    "test:e2e": "npx playwright test",
+    "test:visual": "npx playwright test src/tests/visual/visual.spec.ts --project=visual",
+    "test:codegen": "npx playwright codegen https://automationexercise.com/"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +15,10 @@
   "devDependencies": {
     "@playwright/test": "^1.55.0",
     "@types/node": "^24.3.0",
-    "dotenv": "^17.2.2"
+    "dotenv": "^17.2.2",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "csv-parse": "^6.1.0"
   }
 }

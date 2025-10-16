@@ -1,4 +1,7 @@
 import {defineConfig} from "@playwright/test";
+import {config} from "dotenv";
+
+config({ path: ".env.stage" });
 
 export default defineConfig({
     testDir: 'src/pages',
@@ -9,10 +12,10 @@ export default defineConfig({
         timeout: 7000
     },
     use: {
-        baseURL: "",
+        baseURL: process.env.BASE_URL,
         screenshot: "on",
         video: "on",
-        viewport: { height: 500, width: 700},
+        viewport: { height: 500, width: 700 },
         headless: false,
         browserName: "firefox"
     }
